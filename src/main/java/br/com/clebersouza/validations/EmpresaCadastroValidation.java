@@ -27,7 +27,7 @@ public class EmpresaCadastroValidation {
 		if (dto.getCnpj() == null || dto.getCnpj().length() == 0) {
 			mensagens.add("Favor informar o CNPJ para a empresa");
 		} else if (dto.getCnpj().trim().length() < 13 || dto.getCnpj().trim().length() > 14) {
-			mensagens.add("Favor informar um CNPU entre 10 e 150 caracteres.");
+			mensagens.add("Favor informar um CNPJ entre 10 e 14 caracteres.");
 		}
 		
 		return mensagens;
